@@ -10,11 +10,17 @@
 	<div class="container">
 		<h1>Мой первый блог</h1>
 			<div>
+				<?php foreach($art as $i):?>
 					<div class="art">
-						<h3></h3>	
-						<em></em>
-						<p></p>
+						<h2>Глава <?php echo $i['id'];?></h2>
+						<h3>
+							<a href="function.php?id=<?=$i['id']?>"></a>
+							<?=$i['title']?>
+						</h3>	
+						<em><?=$i['date']?></em>
+						<p><?=$i['content']?></p>
 					</div>
+				<?php endforeach ?>
 			</div>
 	</div>
 <div>
