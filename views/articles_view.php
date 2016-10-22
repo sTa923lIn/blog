@@ -13,7 +13,7 @@
 				<?php foreach($art as $i):?>
 					<div class="art">
 						<h3>
-							<a href="controller/articl_controller?id=<?=$i['id']?>">
+							<a href="articl_controller.php?id=<?=$i['id']?>">
 							<?=$i['title']?></a>
 						</h3>	
 						<em><?=$i['date']?></em>
