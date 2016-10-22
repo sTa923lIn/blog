@@ -12,9 +12,8 @@
 			<div>
 				<?php foreach($art as $i):?>
 					<div class="art">
-						<h2>Глава <?php echo $i['id'];?></h2>
 						<h3>
-							<a href="function.php?id=<?=$i['id']?>"></a>
+							<a href="controller/articl_controller?id=<?php $i['id']?>"></a>
 							<?=$i['title']?>
 						</h3>	
 						<em><?=$i['date']?></em>
