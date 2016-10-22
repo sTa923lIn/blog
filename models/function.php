@@ -37,6 +37,7 @@ return $arr;
 }
 
 function Articles_get($id){
+
 	
 }
 

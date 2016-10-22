@@ -10,16 +10,13 @@
 	<div class="container">
 		<h1>Мой первый блог</h1>
 			<div>
-				<?php foreach($art as $i):?>
 					<div class="art">
 						<h3>
-							<a href="controller/articl_controller?id=<?=$i['id']?>">
-							<?=$i['title']?></a>
+							<?=$cont['title']?>
 						</h3>	
-						<em><?=$i['date']?></em>
-						<p><?=$i['content']?></p>
+						<em><?=$cont['date']?></em>
+						<p><?=$cont['content']?></p>
 					</div>
-				<?php endforeach ?>
 			</div>
 	</div>
 <div>
