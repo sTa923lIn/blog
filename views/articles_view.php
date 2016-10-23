@@ -10,6 +10,20 @@
 	<div class="container">
 		<h1>Мой первый блог</h1>
 			<div>
+
+
+<?php while ($row=mysql_fetch_array($art)) 
+			{
+			echo '<option value="'.$row[0].'">'; // назначаем выбранной стране из списка, айди или номер
+			echo $row[1];
+			echo $row[2];
+			echo $row[3];
+			
+			echo '</option>';
+			}
+?>
+
+
 				<?php foreach($art as $i):?>
 					<div class="art">
 						<h3>
