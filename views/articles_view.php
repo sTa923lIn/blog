@@ -9,7 +9,7 @@
 <body>
 	<div class="container">
 		<h1>Мой первый блог</h1>
-			<div>
+			<div> 
 
 
 <?php while ($row=mysql_fetch_array($art)) 

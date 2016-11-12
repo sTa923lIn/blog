@@ -7,4 +7,5 @@ $art=Articles_all();
 include_once('views/articles_view.php');
 
 
+
  ?>
