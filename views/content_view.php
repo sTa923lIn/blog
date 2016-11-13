@@ -8,8 +8,9 @@
 </head>
 <body>
 	<div class="container">
-		<h1>Мой первый блог</h1>
+		<h1>Приветствую!</h1>
 			<div>
+				
 					<div class="art">
 						<h3>
 							<?=$cont['title']?>
@@ -17,6 +18,7 @@
 						<em><?=$cont['date']?></em>
 						<p><?=$cont['content']?></p>
 					</div>
+			
 			</div>
 	</div>
 <div>

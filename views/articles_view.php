@@ -11,35 +11,18 @@
 		<h1>Мой первый блог</h1>
 			<div> 
 
+		<p><a href="admin/index.php">Панель администратора</a></p>
 
-<?php /*
-
-	while ($row=mysql_fetch_array($art)) // делаем вывод статей через цикл while
-			{
-			echo '<p>';
-
-			$id=1;            // делаем маштабируемость колонок блога 
-			echo $row[$id++]; 
-			echo $row[$id++];
-			echo $row[$id++];
-			echo $row[$id++];
-
-			echo '</p>';
-			
-			}
-	*/
-	$n=mysql_num_rows($a);
-	while($n>0)
-	{
-	foreach ($a as $k => $i)
-	{
-		echo $i.'<br>';
-
-	}
-	}
-?>
-
-
+				<?php foreach($art as $i):   // делаем вывод статей через foreach ?> 
+					<div class="art">
+						<h3>
+							<a href="articl_controller.php?id=<?=$i['id']?>">
+							<?=$i['title']?></a>
+						</h3>	
+						<em><?=$i['date']?></em>
+						<p><?=$i['content']?></p>
+					</div>
+				<?php endforeach ?>
 			</div>
 	</div>
 <div>
