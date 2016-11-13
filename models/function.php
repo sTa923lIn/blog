@@ -1,8 +1,10 @@
 <?php
+
 function Articles_all(){
 
-		$sel='select * from blod_tabel order by id desc';
+		$sel='select * from blod_tabel';
 		$art=mysql_query($sel);
+		$art=mysql_fetch_array($art, MYSQL_ASSOC);
 
 		return $art;
 

@@ -1,10 +1,12 @@
 <?php 
-include_once('db/database.php');
-include_once('models/function.php');
-connect();
-$art=Articles_all();
 
-include_once('views/articles_view.php');
+include_once('db/database.php'); // подключаем файл для работы с базой данных
+include_once('models/function.php'); // подключаем файл с функциями
+
+	connect(); // подключаем базу данных
+	$a=Articles_all(); // присвоил переменной выборку из таблицы blog_tabel
+
+		include_once('views/articles_view.php'); //подключил вьюшку для вывлда статей блога из базы
 
 
 

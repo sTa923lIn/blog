@@ -12,28 +12,34 @@
 			<div> 
 
 
-<?php while ($row=mysql_fetch_array($art)) 
+<?php /*
+
+	while ($row=mysql_fetch_array($art)) // делаем вывод статей через цикл while
 			{
-			echo '<option value="'.$row[0].'">'; // назначаем выбранной стране из списка, айди или номер
-			echo $row[1];
-			echo $row[2];
-			echo $row[3];
+			echo '<p>';
+
+			$id=1;            // делаем маштабируемость колонок блога 
+			echo $row[$id++]; 
+			echo $row[$id++];
+			echo $row[$id++];
+			echo $row[$id++];
+
+			echo '</p>';
 			
-			echo '</option>';
 			}
+	*/
+	$n=mysql_num_rows($a);
+	while($n>0)
+	{
+	foreach ($a as $k => $i)
+	{
+		echo $i.'<br>';
+
+	}
+	}
 ?>
 
 
-				<?php foreach($art as $i):?>
-					<div class="art">
-						<h3>
-							<a href="articl_controller.php?id=<?=$i['id']?>">
-							<?=$i['title']?></a>
-						</h3>	
-						<em><?=$i['date']?></em>
-						<p><?=$i['content']?></p>
-					</div>
-				<?php endforeach ?>
 			</div>
 	</div>
 <div>
