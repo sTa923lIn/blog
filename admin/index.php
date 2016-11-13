@@ -1,5 +1,6 @@
 <?php  
 
-echo "Это админка";
+include_once('../db/database.php');
+include_once('../models/fuction.php');
 
 ?>
